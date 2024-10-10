@@ -7,7 +7,8 @@ MYSYNCFLAGS= -lmysync
 FFTFLAGS= -lfftw3 -lmyfft 
 CFLAGS= -lm -Wall -pthread -Wpedantic -Wextra 
 SANI_ADDR= -fsanitize=address -fno-omit-frame-pointer 
-CC= cc $(CFLAGS)
+#CC= cc $(CFLAGS)
+CC= clang $(CFLAGS)
 
 targets=\
     derivative\
