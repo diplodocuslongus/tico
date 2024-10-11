@@ -103,7 +103,7 @@ Its setup is:
   appl_ptr     : 0
   hw_ptr       : 0
 
- arecord --device="hw:1,0" -d 5 -c 1 -f S16_LE -t wav test.wav
+arecord --device="hw:1,0" -d 5 -c 1 -f S16_LE -t wav test.wav
 Recording WAVE 'test.wav' : Signed 16 bit Little Endian, Rate 8000 Hz, Mono
 arecord: set_params:1358: Channels count non available
  gonze:tico/ (dev) $ arecord --device="hw:1,0" -d 5 -f S16_LE -t wav test.wav
@@ -118,5 +118,7 @@ Seems need to have only a mono input source
 LS100 only outputs stereo
 Make mono from stereo:
 https://superuser.com/questions/1176632/create-alsa-device-with-1-channel-from-2
+
+On a RPi3, the LS-100 is on card 2 device 1 and is recognized ok.
 
 
